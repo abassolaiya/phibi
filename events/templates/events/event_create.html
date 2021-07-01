@@ -1,0 +1,19 @@
+{% extends "_base.html" %}
+
+{% block title %}Create An Event{% endblock %}
+{% block content %}
+      <div class="create_blog" >
+        
+        <form class="create_blog-form" method="post" enctype="multipart/form-data" >
+          
+          <div class="create_blog-form-top" > Host An Event </div>
+          
+          {% csrf_token %}
+            {{ form }}
+          
+          <button class="create_blog-form-btn" type="submit" name="action" value='SAVE' > Host Event </button>
+          
+        </form>
+        
+      </div>
+{% endblock %}

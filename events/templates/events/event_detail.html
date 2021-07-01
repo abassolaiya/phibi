@@ -1,0 +1,128 @@
+{% extends '_base.html' %}
+{% load static %}
+{% block title %}{{ object.title }}{% endblock title %}
+{% block content %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class="event_detail" >
+        
+        <div class="event_detail-div" >
+          
+          <div class="event_detail-div-top" > {{ event_detail.title }} </div>
+          
+          {% if event_detail.banner %}
+          
+          <div class="event_detail-div-img" >
+            <img class="event_detail-div-img-pic" alt="" src="{{ event_detail.banner.url }}" />
+          </div>
+          
+          {% endif %}
+          
+          <div class="event_detail-div-tit" >
+            About
+            <br>
+            The Event
+          </div>
+          
+          <div class="event_detail-div-str" >
+            {{ event_detail.description }}
+          </div>
+          
+          <div class="event_detail-div-det" >
+            
+            <div class="event_detail-div-det-div" >
+              <div class="event_detail-div-det-div-img" >
+                <img class="event_detail-div-det-div-img-pic" src="{% static "css/img/location.png" %}" alt="" />
+              </div>
+              
+              <span class="event_detail-div-det-div-span" >{{ event_detail.venue }}</span>
+              
+            </div>
+            
+            <div class="event_detail-div-det-div" >
+              <div class="event_detail-div-det-div-img" >
+                <img class="event_detail-div-det-div-img-pic" src="{% static "css/img/alarm-clock.png" %}" alt="" />
+              </div>
+              
+              <span class="event_detail-div-det-div-span" >{{ event_detail.time }}</span>
+              
+            </div>
+            
+          </div>
+          
+
+
+
+          <div class="post-comment" style="padding:2rem" >
+            
+            <div class="comment-section-top" style="margin-top:6rem;" > Register For This Event </div>
+            
+            <form method="POST" class="post-comment-form">
+              {% csrf_token %}
+              {{ form.as_p }}
+              <button type="submit" class="save btn btn-default"> Register </button>
+            </form>
+          </div>
+          
+
+          <div class="comment-section" style="padding-bottom:4rem;" >
+            
+            <div class="comment-section-top" > Registerd Perticipant </div>
+            
+            {% for comment in event_detail.register.all %}
+            
+              <div class="comment-section-div" >
+              
+              <div class="comment-section-div-top" >
+                
+                <div class="comment-section-div-top-img" >
+                  <img class="comment-section-div-top-img-pic" src="{% static "images/user.png" %}" alt="{{comment.name}}" />
+                </div>
+                
+                <div class="comment-section-div-top-name" >
+                  <div class="comment-section-div-top-name-name" > {{ comment.name }} </div>
+                  <div class="comment-section-div-top-name-date" > {{ comment.email }} </div>
+                  <div class="comment-section-div-top-name-date" > {{ comment.phone_number }} </div>
+                </div>
+                
+              </div>
+              
+              <div class="comment-section-div-body" >
+                {{ comment.address }}
+              </div>
+              
+            </div>
+            
+            {% endfor %}
+            
+          </div>
+
+          
+          
+        </div>
+        
+      </div>
+
+
+
+
+{% endblock content %}
