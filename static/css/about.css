@@ -1,0 +1,434 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+/* DESKTOP VIEW */
+@media screen and (max-width: 112.5em){
+    .about_main_div{
+ height: 30vh;
+/* border: 1px solid red; */
+        
+    }
+
+    .about_main_back{
+ height: 30vh;
+ 
+
+    }
+
+    .about_paragraph{
+        padding: 1rem;
+        /* margin-left: 4rem;    */
+        text-align: center;
+    font-size: 2rem
+
+    }
+    .about_title{
+        color: white;
+        animation-name: Textani;
+        animation-duration: 2s;
+    font-size: 5rem
+    }
+
+    .team_pic{
+        /* border: 1px solid red; */
+        /* margin: 5px; */
+        /* width: 100%; */
+        padding: 1rem;
+        /* height: 100rem; */
+        /* position: top; */
+        /* margin-bottom: 2rem; */
+    }
+
+    .team_pic img{
+        /* border: 1px solid red; */
+        width: 40%;
+        margin-left: 8rem;
+        /* max-height: 100%; */
+        /* display: block; */
+        clip-path: circle();
+    }
+
+    .team_box{
+        /* border: 1px solid red;  */
+    width: 40%; 
+    padding: 3rem;
+     margin: 25px;
+    }
+
+    .team_main{
+        /* border: 1px solid black; */
+    width: 90%;
+    margin-top: 1rem;
+    margin-left: 5.5rem;
+    padding: .5rem;
+    display: flex
+    }
+
+    .checkbtn{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* tab-land */
+@media screen and (max-width: 75em){
+    .about_title{
+        /* color: blue */
+    }
+
+    .team_pic{
+        /* border: 1px solid red; */
+        /* margin: 5px; */
+        /* width: 100%; */
+        /* height: 9rem; */
+        /* margin-bottom: 2rem; */
+    }
+
+    .team_pic img{
+        /* border: 1px solid red; */
+        /* width: 50%; */
+        /* height: 50%; */
+        margin-left: 5.5rem;
+      
+    }
+
+}
+
+
+
+
+
+
+
+
+
+/*  tab-port*/
+@media screen and (max-width: 62.688em){
+   
+    .about_title{
+        /* color: yellow */
+    font-size: 3rem
+
+    }
+
+    .about_paragraph{
+    font-size: 2rem
+
+    }
+
+    .team_box{
+        /* border: 1px solid blue; */
+        margin-left: 20rem;
+    }
+
+    .team_main{
+        /* border: 1px solid blue; */
+        margin-left: 4rem;
+        flex-direction: column
+    }
+
+
+
+    .team_pic img{
+        /* width: 100%; */
+        /* margin-top: 2rem; */
+        margin-left: 9rem
+    }
+
+    .checkbtn{
+        display: block
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* tab-port2*/
+@media screen and (max-width: 47.875em){
+    .about_title{
+        /* color: crimson; */
+        /* height: 35vh; */
+    }
+   
+
+    .about_paragraph{
+        /* margin-top: -17rem; */
+        font-size: .2rem
+    }
+
+    
+    .team_main{
+        flex-direction: column
+    }
+    
+    .team_box{
+        margin-left: 18rem
+    }
+
+    .team_pic img{
+        /* border: 1px solid red; */
+        width: 70%;
+        margin-top: -.5rem;
+        margin-left: 3rem
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* phone-land*/
+@media screen and (max-width: 37.5em){
+    .about_title{
+        /* color: purple */
+    }
+
+    .about_main_div{
+        height: 40vh
+    }
+    
+    .about_main_back{
+        height: 40vh
+    }
+
+    .about_paragraph{
+        /* border: 1px solid blue; */
+        /* margin-left: 1rem */
+    }
+
+
+    .team_pic img{
+        margin-left: 4rem;
+        /* height: 0vh */
+    }
+
+    .team_main{
+        margin-left: 2.5rem;
+    }
+    .team_box{
+        margin-left: 11rem;
+        width: 50%;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* phone-port */
+@media screen and (max-width:  30.563em){
+    .about_main_div{
+        height: 16vh;
+    }
+
+    .about_title{
+        /* color: white; */
+        /* font-size: 10px; */
+    }
+
+    .about_paragraph{
+        font-size: 1.5rem;
+    }
+
+
+    .team_box{
+        margin-left: 4rem;
+        width: 60%
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* phone-port low*/
+@media screen and (max-width:  23.5em){
+    .about_title{
+        /* color: red */
+    }
+    .about_main_div{
+        height: 50vh
+    }
+    
+    .about_main_back{
+        height: 50vh
+    }
+
+    .team_main{
+        margin-left: 1rem
+    }
+
+    .team_box{
+        width: 65%;
+        margin-left: 2.5rem;
+        /* height: 50vh; */
+    }
+
+    .team_pic img{
+        margin-left: 3rem
+    }
+}
+
+
+
+
+
+.about_main_div{
+ /* border: 1px solid black; */
+ /* width: 100%; */
+ /* height: 30vh; */
+ padding: 2px;
+ /* margin-top: -6rem; */
+ border-bottom-left-radius: 10px;
+ border-bottom-right-radius: 10px;
+ /* margin-left: 2rem; */
+ background-image: url(../css/img/about.jpg);
+ background-position: center;
+ background-size: cover
+}
+
+.about_main_back{
+    /* border: 1px solid blue; */
+    background: rgba(0, 0, 0, 0.6);
+ width: 100%;   
+ /* height: 30vh; */
+ position: absolute;    
+ border-bottom-right-radius: 10px;
+ border-bottom-left-radius: 10px;
+ box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.5);
+    
+}
+
+.about_about{
+    position: relative;
+    top: 10% ;
+    /* left: 5%; */
+}
+
+.about_title{
+    /* border: 1px solid red; */
+    text-align: center;
+    /* color: white; */
+    /* margin: 1rem; */
+    padding: 2px;
+}
+
+.about_paragraph{
+    /* border: 1px solid red; */
+    /* width: 90%; */
+    /* font-size: 2rem; */
+    /* margin-left: 4rem; */
+    /* height: 10vh; */
+    color: wheat;
+    /* padding: 1rem; */
+    text-align: center
+}
+
+.team_head_title{
+    /* border:  1px solid red; */
+    /* width: 100%; */
+    margin-top: 1rem; 
+    padding: .5rem;
+    text-align: center;
+    font-size: 2.5rem;
+    color: blue;
+    font-weight: bold
+}
+
+.team_main{
+    /* border: 1px solid black;
+    width: 90%;
+    margin-top: 1rem;
+    margin-left: 5.5rem;
+    padding: .5rem;
+    display: flex */
+}
+
+.team_box{
+    /* border: 1px solid red; */
+    /* width: 40%; */
+    /* padding: 1rem; */
+    /* margin: 25px; */
+ box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.5);
+    border-radius: 7px
+}
+
+.team_pic{
+    /* border: 1px solid blue; */
+    /* margin: 5px;
+    width: 100%;
+    height: 9rem;
+    margin-bottom: 2rem; */
+    /* display: inline-block */
+}
+
+.team_pic img{
+    /* max-width: 100%;
+    margin-left: 9rem;
+    max-height: 100%;
+    display: block;
+    clip-path: circle(); */
+    /* position: relative; */
+}
+
+.team_title{
+    background: rgb(4, 4, 82);
+    /* border: 1px solid black; */
+    /* width: 100%; */
+    padding: .4rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    /* margin-left: -6  px; */
+    text-align: center;
+    color: aliceblue
+}
+
+.team_text{
+    margin-top: 1rem;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 1.5rem;
+}
+

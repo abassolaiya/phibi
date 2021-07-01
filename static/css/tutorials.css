@@ -1,0 +1,187 @@
+
+
+.tutorials_big{
+  /*border:1px solid red;*/
+  padding:4rem;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-evenly;
+}
+
+
+
+.tutorials_div{
+  /*box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);*/
+  background-color:white;
+  width:24%;
+  margin:2rem 0rem;
+}
+
+
+.tutorials_div-top{
+  height:20rem;
+  /*border:1px solid red;*/
+}
+
+.tutorials_div-top-img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.tutorials_div-dec{
+  display:flex;
+  margin-top:1rem;
+  /*align-items:center;*/
+}
+
+.tutorials_div-dec-pic{
+  width:3.5rem;
+  height:3.5rem;
+  border-radius:50%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin-right:2rem;
+  /*border:2px solid crimson;*/
+}
+
+.tutorials_div-dec-pic-img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  border-radius:50%;
+}
+
+.tutorials_div-dec-a{
+  font-size:1.5rem;
+  text-decoration:none;
+  color:#333;
+  /*font-weight:600;*/
+}
+
+.tutorials_div-dec-a:hover{
+  text-decoration:underline;
+}
+
+.tutorials_div-time{
+  /*margin-top:1rem;*/
+  /*margin-left:3rem;*/
+  color:gray;
+  font-size:1.3rem;
+  /*font-weight:600;*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            /* Tab-land */
+            
+            @media (max-width: 75em){
+              
+              .tutorials_div{
+                /*border:1px solid red;*/
+                width:31%;
+              }
+              
+            }
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            /* Tab-port */
+            
+            
+            @media (max-width: 56.25em){
+              
+              .tutorials_div{
+                /*border:1px solid blue;*/
+                width:47%;
+              }
+              
+              .tutorials_big{
+                justify-content:space-evenly;
+              }
+              
+            }
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            /* Phone-land */
+            
+            
+            @media (max-width: 37.5em){
+              
+              .tutorials_div{
+                /*border:1px solid yellow;*/
+              }
+              
+            }
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            /* Phone-port */
+            
+            
+            @media (max-width: 28.125em){
+              
+              .tutorials_div{
+                /*border:1px solid orange;*/
+                width:100%;
+              }
+              
+            }

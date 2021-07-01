@@ -1,0 +1,392 @@
+
+
+.blog-detail{
+  padding:6rem;
+  display:flex;
+  justify-content:space-between;
+}
+
+
+
+.blog-detail-full{
+  /*width:60%;*/
+}
+
+
+.blog-detail-full-title{
+  margin:3rem 0rem;
+  font-size:4rem;
+}
+
+
+.blog-detail-full-img{
+  width:100%;
+  height:40rem;
+  margin:2rem auto;
+}
+
+.blog-detail-full-img-pic{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.blog-detail-full-detail{
+  font-size:1.7rem;
+}
+
+
+
+.blog-detail-side{
+  /*width:35%;*/
+  padding:3rem 1rem;
+}
+
+
+
+
+.blog-detail-side-top{
+  font-size:1.5rem;
+  font-weight:600;
+  font-family:tahoma;
+}
+
+
+
+.blog-detail-side-list{
+  margin:3rem 0rem;
+  display:flex;
+  /*border:1px solid red ;*/
+  align-items:flex-start;
+}
+
+
+
+.blog-detail-side-list-left{
+  width:3rem;
+  height:2.5rem;
+  margin-right:1rem;
+  background-color:lightgray;
+}
+
+
+
+.blog-detail-side-list-right{
+  font-size:1.4rem;
+  font-weight:600;
+  color:dodgerblue;
+  font-family:tahoma;
+  text-decoration:none;
+  display:block;
+  transition:.5s;
+}
+
+.blog-detail-side-list-right:hover{
+  opacity:.7;
+}
+
+
+
+
+
+
+
+.comment-section{
+  margin:10rem auto;
+  width:80%;
+  /*border:1px solid red;*/
+}
+
+
+
+.comment-section-div{
+  
+}
+
+
+.comment-section-top{
+  margin-bottom:2rem;
+  border-bottom:1px solid lightgray;
+  padding-bottom:1rem;
+  font-size:1.5rem;
+  font-weight:600;
+}
+
+
+
+.comment-section-div-top{
+  display:flex;
+  align-items:center;
+}
+
+
+.comment-section-div-top-img{
+  background-color:lightgray;
+  width:5rem;
+  height:5rem;
+  border-radius:50%;
+  margin-right:1rem;
+}
+
+.comment-section-div-top-img-pic{
+  width:100%;
+  height:100%;
+}
+
+.comment-section-div-top-name-name{
+  font-size:1.4rem;
+  font-weight:600;
+}
+
+.comment-section-div-top-name-date{
+  font-size:1.2rem;
+  color:#333;
+}
+
+
+.comment-section-div-body{
+  margin-top:1.5rem;
+  font-size:1.5rem;
+}
+
+
+
+.comment-section-div:not(:first-child){
+  margin-top:3rem;
+}
+
+
+
+
+.post-comment-form{
+  width:50%;
+  margin:1rem auto;
+}
+
+
+.post-comment-form p{
+  display:flex;
+  flex-direction:column;
+}
+
+
+
+.post-comment-form input{
+  font-size:1.3rem;
+  padding:1rem;
+  margin-bottom:1rem;
+  border:none;
+  border-bottom:2px solid lightgray;
+  outline:none;
+  transition:.5s;
+}
+
+.post-comment-form input:focus{
+  border-bottom:2px solid green;
+}
+
+
+.post-comment-form label{
+  font-size:1.5rem;
+  /*font-weight:600;*/
+  font-family:tahoma;
+  margin-left:1rem;
+}
+
+
+.post-comment-form textarea{
+  margin:2rem 0rem;
+  border:2px solid lightgray;
+  resize:none;
+  transition:.5s;
+  outline:none;
+  padding:1rem;
+  font-family:tahoma;
+}
+
+
+
+.post-comment-form textarea:focus{
+  border:2px solid green;
+}
+
+
+.post-comment-form select{
+  padding:1rem;
+  margin-top:2rem;
+}
+
+
+
+
+.post-comment-form button{
+  display:block;
+  margin-top:4rem;
+  width:100%;
+  padding:1rem;
+  font-size:1.3rem;
+  text-transform:uppercase;
+  border:none;
+  background-color:orange;
+  color:white;
+  font-weight:600;
+  border-radius:5px;
+  cursor:pointer;
+  transition:.5s;
+}
+
+
+
+.post-comment-form button:hover{
+  opacity:.7;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            /* Tab-land */
+            
+            @media (max-width: 75em){
+              /*.blog-detail-side{*/
+              /*  border-left:2px solid red;*/
+              /*}*/
+              .blog-detail{
+                padding:4rem;
+                display:flex;
+                flex-direction:column;
+                justify-content:space-between;
+              }
+              .blog-detail-full{
+                /*width:100%;*/
+              }
+              .blog-detail-side{
+                /*width:100%;*/
+                padding:3rem 1rem;
+              }
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            /* Tab-port */
+            
+            
+            @media (max-width: 56.25em){
+              /*.blog-detail-side{*/
+              /*  border-left:2px solid blue;*/
+              /*}*/
+              .blog-detail{
+                padding:3rem;
+              }
+              .blog-detail-full-title{
+                margin:3rem 0rem;
+                font-size:3rem;
+              }
+              .comment-section{
+                margin:10rem auto;
+                /*width:100%;*/
+              }
+            }
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            /* Phone-land */
+            
+            
+            @media (max-width: 37.5em){
+              /*.blog-detail-side{*/
+              /*  border-left:2px solid yellow;*/
+              /*}*/
+              .post-comment-form{
+                width:90%;
+                margin:1rem auto;
+              }
+            }
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            /* Phone-port */
+            
+            
+            @media (max-width: 28.125em){
+              /*.blog-detail-side{*/
+              /*  border-left:2px solid crimson;*/
+              /*}*/
+            }

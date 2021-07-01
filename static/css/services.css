@@ -1,0 +1,301 @@
+.our_services-welcome-container{
+  height: 70vh;
+  /*animation: animate 20s ease infinite;*/
+  background-size: cover;
+  background-position: top;
+  padding:2rem;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  background-image:url("./img/services.jpg");
+  background-position:bottom;
+  background-size:cover;
+}
+
+
+
+.our_services-welcome-container-head{
+  font-size:7rem;
+  font-weight:600;
+  text-transform:uppercase;
+  color:white;
+  transition: all .5s;
+  animation-name: Textani;
+  animation-duration: 2s;
+  -webkit-text-stroke:2px gray;
+  /*text-shadow:-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;*/
+}
+
+
+.our_services-welcome-container-sub{
+  font-size:2rem;
+  color:white;
+  font-weight:600;
+  animation-name: Textanim;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  -webkit-text-stroke:1px gray;
+}
+
+
+
+.category_div{
+  padding:8rem;
+  color:white;
+  background-image:linear-gradient(to right, tomato,70%,crimson);
+  font-family:tahoma;
+}
+
+
+.category_div-top{
+  margin-bottom:1rem;
+  font-size:2rem;
+  font-weight:600;
+  margin-top:3rem;
+}
+
+
+.category_div-body{
+  font-size:1.5rem;
+  margin-bottom:8rem;
+}
+
+
+
+.category_div-serv{
+  display:flex;
+  justify-content:space-between;
+}
+
+
+.category_div-serv:not(:first-child){
+  margin-top:11rem;
+}
+
+
+.category_div-serv-part{
+  width:50%;
+}
+
+
+.category_div-serv-part-top{
+  font-size:6rem;
+  font-weight:600;
+  text-transform:uppercase;
+  /*text-align:center;*/
+}
+
+
+.category_div-serv-part-str{
+  font-size:1.5rem;
+}
+
+
+.category_div-serv-part li{
+  margin:1rem 0rem;
+  font-size:1.5rem;
+}
+
+
+.category_div-serv-sp{
+  width:45%;
+  /*border:1px solid white;*/
+}
+
+
+.category_div-serv-sp-img{
+  width:100%;
+  height:100%;
+  object-fit:scale-down;
+}
+
+
+
+
+
+.category_div-serv-part-str-a{
+  display:block;
+  padding:1rem 1.5rem;
+  margin:4rem auto;
+  border-radius:30px;
+  color:crimson;
+  font-size:1.3rem;
+  font-weight:600;
+  text-decoration:none;
+  background-color:white;
+  width:fit-content;
+  transition:all .5s;
+  text-align: center;
+  outline:none;
+}
+
+
+
+.category_div-serv-part-str-a:hover,.category_div-serv-part-str-a:focus{
+  /*background-color:;*/
+  /*color:white;*/
+  transform:translateY(-.5rem);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            /* Tab-land */
+
+            @media (max-width: 75em){
+
+              .our_services-welcome-container{
+                text-align:center;
+                height:60vh;
+              }
+
+              .our_services-welcome-container-head{
+                font-size:4rem;
+              }
+
+              .category_div{
+                padding:4rem;
+              }
+
+              .category_div-serv{
+                /*border:1px solid red;*/
+              }
+
+              .category_div-serv-part{
+
+              }
+
+              .category_div-serv-part-top{
+                font-size:4rem;
+                margin-bottom:.5rem;
+              }
+
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            /* Tab-port */
+
+
+            @media (max-width: 56.25em){
+
+              .category_div-serv{
+                flex-direction:column;
+              }
+
+              .category_div-serv-part{
+                width:100%;
+              }
+
+              .category_div-serv-sp{
+                display:none;
+              }
+
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            /* Phone-land */
+
+
+            @media (max-width: 37.5em){
+
+              .our_services-welcome-container-head{
+                font-size:4rem;
+                -webkit-text-stroke:1px lightgray;
+              }
+
+              .our_services-welcome-container-sub{
+                font-size:1.6rem;
+                -webkit-text-stroke:0px white;
+              }
+
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+            /* Phone-port */
+
+
+            @media (max-width: 28.125em){
+
+            }

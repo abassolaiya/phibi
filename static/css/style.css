@@ -1,0 +1,1181 @@
+*{
+    margin: 0 ;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+html{
+
+    font-size:62.5%;
+
+    /* tab-land */
+    @media  screen and (max-width:75em) {
+        font-size:56.25%;
+    }
+
+
+
+
+    /* tab-port */
+
+    @media  screen and (max-width:56.25em) {
+        font-size:50%;
+    }
+
+    /* @media screen and (max-width:112.5em) {
+        font-size:75%;
+    } */
+
+}
+
+::-webkit-scrollbar{
+    width: 6px;
+    background-color: rgba(0, 0, 255, 0.137);
+}
+
+::-webkit-scrollbar-track{
+ /* border-radius: 5px; */
+ box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.295);
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    background-color: #96000071;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: #960000bb;
+}
+
+/* .body{
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+} */
+
+
+
+
+
+  .outer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background:transparent;
+  }
+
+@keyframes animate{
+    0%,100%{
+        background-image: url(./img/finegirl2.jpg);
+    }
+
+    25%{
+        background-image: url(./img/image11.jpg);
+    }
+
+    50%{
+        background-image: url(./img/image4.jpg);
+    }
+
+    75%{
+        background-image: url(./img/img1.jpg);
+    }
+
+    100%{
+        background-image: url(./img/img2.jpg);
+    }
+
+}
+
+
+
+
+
+
+
+@keyframes Textani{
+    0%{
+       opacity: 0;
+       transform: translate(-100px);
+    }
+
+    100%{
+        opacity: 1;
+       transform: translate(0);
+    }
+
+}
+
+
+@keyframes Textanim{
+    0%{
+       opacity: 0;
+       transform: translate(200);
+    }
+
+    100%{
+        opacity: 1;
+       transform: translate(0);
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* desktop */
+@media screen and (max-width:112.5em){
+
+   
+
+
+    
+    .service_box{
+        /* border: 1px solid red; */
+         margin: 2rem;
+        /* border: 1px solid red; */
+
+    }
+
+    .box_one{
+        /* border: 1px solid red; */
+        margin-left: 1rem;
+        width: 40%
+    }
+
+  
+
+
+    .display{
+        /* border: 1px solid white; */
+        display: none;
+    }
+
+
+    .button{
+        /* border: 1px solid red; */
+        margin: 2rem;
+        width: 15%
+    }
+
+    .tester{
+        /* border: 1px solid red; */
+        margin-left: 45rem;
+        width: 35%
+    }
+
+    .icons_social{
+        margin-left: 9rem;
+        width: 50%;
+        height: 50%
+    }
+
+    .icon_ese{
+        width: 100%
+    }
+    .icon_ese img{
+        /* border: 1px solid black; */
+        width: 100%;
+        height: 100%;
+    }
+
+    .service_pics{
+        margin-left: 11rem
+    }
+
+    .service_details p{
+        font-size: 1.4rem;
+    }
+
+    .paragraph_text h1{
+        /* border: 1px solid black; */
+        font-size: 2rem
+    }
+
+    .foot_boxes{
+        margin-left: 6rem;
+        margin-right: 6rem;
+        margin-top: 6rem;
+        display: flex;
+    
+
+    }
+
+    .box_foot{
+        width: 40%;
+        /* margin-left: -10rem; */
+    }
+    
+    .top_header_fixed_img{
+        display: none
+    }
+
+    
+
+
+
+.pc{
+    font-size: 1.5rem;
+    line-height: 20px;
+    text-align: justify;
+}
+
+
+
+.contact_title{
+    font-size: 1.5rem;
+}
+
+.pc2 ul li a{
+    font-size: 1.5rem
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* tab-land */
+
+
+
+@media screen and (max-width:75em) {
+
+    .details h1{
+        /* color: rebeccapurple; */
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 4rem;
+   }
+
+   .service_pics img{
+       /* border: 1px solid red; */
+       margin-left: -3.5rem
+   }
+
+   .button{
+    /* border: 1px solid red; */
+    margin: 2rem;
+    margin-bottom: 2rem;
+    width: 15%
+}
+
+.paragraph_text{
+    /* border: 1px solid red; */
+    width: 150%;
+        font-size: 2rem
+    
+    /* margin-top: rem; */
+}
+
+.tester{
+    margin-left: 35rem
+}
+
+}
+
+
+
+
+
+
+
+
+/* TAB-PORT */
+@media screen and (max-width: 56.25em){
+    .details{
+        width: 100%
+    }
+
+    .details h1{
+        /* color: blue */
+    }
+
+    .service_pics img{
+        margin-left: -5.5rem;
+        /* border: 1px solid red */;
+         
+    }
+
+    .paragraph_text{
+        /* border: 1px solid red; */
+        width: 150%;
+        /* margin-top: rem; */
+    }
+
+    .service_box{
+        /* border: 1px solid red; */
+         margin: 2rem
+    }
+
+    .box_one{
+        margin-top: 1rem;
+        /* border: 1px solid red   */
+    }
+
+    .connect{
+        /* border: 1px solid red; */
+
+    }
+
+    .foot_boxes{
+        padding: 15px;
+        width: 90%;
+        margin-left: 3rem;
+        flex-direction: column;
+
+
+    }
+
+    .box_foot{
+        margin-left: 20rem;
+    }
+
+    .contact_title{
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    .button{
+        /* border: 1px solid red; */
+        margin: 2rem;
+        width: 30%
+    }
+
+    .tester{
+        margin-left: 29rem
+    }
+
+    .pc{
+        text-align: center;
+        /* border: 1px solid red ; */
+        text-align: center;
+    }
+
+    .pc2{
+        text-align: center;
+    }
+    .icons_social{
+        width: 70%;
+        width: 70%;
+        margin-left: 4rem
+    }
+
+    .icon_ese{
+        width: 100%
+    }
+    .icon_ese img{
+        /* border: 1px solid black; */
+        width: 100%;
+        height: 100%;
+    }
+  
+    .top_header_fixed_img{
+        display: block
+    }
+    .top_header_fixed {
+        position: fixed;
+        bottom: 2rem;
+        right: 2rem;
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+        background-color: white;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+        display: none; }
+
+        
+
+}
+
+
+
+
+
+
+
+
+
+
+/* TAB-PORT 2 */
+
+@media screen and (max-width: 47.875rem){
+    .details h1{
+        /* color: brown; */
+
+    }
+
+    .details{
+        width: 100%
+    }
+
+    .display{
+        display: flex;
+
+    }
+
+    .service_box{
+        /* width: 100%; */
+        width: -2rem;
+        flex-direction: column;
+        transition: all .5s
+    }
+
+    .box_one{
+        /* border: 1px solid red; */
+        width: 80%;
+        margin-left: 5rem;
+        margin-top: 3rem
+    }
+
+    .service_pics{
+        margin-left: 20rem
+    }
+
+    .paragraph_text{
+        width: 150%;
+
+    }
+
+    .paragraph_text h1{
+        font-size: 2.5rem
+    }
+
+    .icons_social{
+        width: 90%;
+        width: 90%;
+        margin-left: 1rem
+    }
+
+    .connect{
+        /* border: 1px solid green; */
+
+        margin-left: 17rem
+    }
+
+
+    .top_header_fixed {
+        /* border: 1px solid red; */
+        display: flex;
+        align-items: center;
+        justify-content: center; } }
+    
+    .top_header_fixed_img {
+      width: 2rem;
+      height: 2rem; }
+    
+    .top_header_totalFixed {
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      top: 0rem;
+      left: 0rem;
+      box-sizing: border-box;
+      background-color: rgba(211, 211, 211, 0);
+      display: none; }
+    
+    .top_header_totalFixed_main {
+      position: fixed;
+      bottom: 0rem;
+      width: 100%;
+      box-sizing: border-box;
+      background-color: rgb(4, 4, 82);
+      animation-name: new;
+      animation-duration: .6s;
+      /* border-top: 1px solid lightgrey; */
+      transition: all .5s;
+      transform: translateY(18rem); }
+    
+    .top_header_totalFixed_main_li {
+      list-style: none; }
+    
+    .top_header_totalFixed_main_li_a {
+      display: block;
+      padding: .5rem;
+      color: rgb(173, 173, 240);
+      font-size: 1.5rem;
+      text-decoration: none;
+      text-align: center;
+      transition: all .5s; }
+    
+    .top_header_totalFixed_main_li_a:hover, .top_header_totalFixed_main_li_a:focus {
+      background-color: lightgray; }
+    
+    .top_header_totalFixed_main_li_a:not(:last-child) {
+      margin-bottom: 1px solid lightgray; }
+    
+
+
+
+
+
+
+
+
+
+/* PHONE-LAND */
+@media screen and (max-width: 37.5em){
+
+    .details h1{
+        /* color: green  */
+    }
+
+    .foot_boxes{
+        margin-left: 12px;
+    }
+    
+    .tester{
+        width: 40%;
+        /* border: 1px solid red; */
+        margin-left: 20rem
+    }
+
+    .service_box{
+        margin-left: 6rem
+        /* flex-direction: column; */
+        /* border: 1px solid redq */
+    }
+
+    .box_one{
+        width: 70%;
+    }
+
+    .box_foot{
+        margin-left: 15rem;
+    }
+
+    .service_pics{
+        margin-left: 15rem
+    }
+
+    .paragraph_text h1{
+        font-size: 2rem
+    }
+
+    .icons_social{
+        width: 100%;
+        width: 100%;
+        margin-left: -.5rem
+    }
+
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* phone-port */
+@media screen and (max-width: 30.563em ) {
+
+    .details h1{
+        /* color: red   */
+    }
+
+    
+
+    .service_box{
+        flex-direction: column;
+        /* border: 1px solid red; */
+        margin-left: 3rem
+    }
+
+    .box_one{
+       margin-left: 2.5rem;
+       width: 80%
+    }
+
+    .service_pics{
+        margin-left: 14rem
+    }
+    
+    .paragraph_text h1{
+        font-size: 1.7rem
+    }
+
+    .button{
+        width: 50%
+    }
+
+    .foot_boxes{
+        margin-left: 1rem;
+        flex-direction: column
+    }
+
+    .box_foot{
+        width: 70%;
+        margin-left: 5.5rem;
+
+    }
+
+  
+
+    .tester{
+        width: 35%;
+        margin-left: 13rem;
+        /* border: 1px solid red; */
+    }
+
+  
+
+.pc{
+   /* border: 1px solid red; */
+}
+
+.pc2{
+    text-align: center;
+    line-height: 2rem;
+}
+
+
+.icons_social{
+    width: 100%;
+    width: 100%;
+    margin-left: -.5rem
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* phone-port-low */
+@media screen and (max-width:23.5em){
+    .details h1{
+        /* color: yellow */
+    }
+
+    .foot_boxes{
+        margin-left: 0;
+    }
+
+    .display{
+        margin-top: .8rem;
+    }
+
+    .paragraph_text h1{
+        font-size: 1.4rem
+    }
+
+    .service_pics{
+        /* border: 1px solid red; */
+        margin-left: 13rem
+    }
+
+    .tester{
+        width: 45%;
+        margin-left: 9rem;
+    }
+
+    .service_box{
+        margin: 1rem;
+    }
+
+    .button a{
+        font-size: 1.4rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+.details h2{
+    /* color: red; */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+
+
+
+
+
+
+.logo h1{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif
+
+}
+
+.display{
+    /* display: flex; */
+    flex-direction: row;
+    margin-top: 1rem;
+}
+
+
+.yell h1 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif
+
+}
+
+.client{
+    /* border: 1px solid red; */
+    padding: 1rem;
+    /* width: 100%; */
+    /* margin: -.5rem; */
+    margin-top: 42rem;
+    display: flex;
+    background: rgb(173, 173, 240)
+}
+
+.box{
+    /* border: 1px solid red; */
+    width: 40%;
+    padding: 1rem;
+    margin: 5px;
+    object-fit: contain
+}
+
+.box img{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.services{
+    /* margin-top: 9rem; */
+    /* border: 1px solid red; */
+    padding: 1rem;
+    /* margin-left: 9.5rem; */
+    /* margin-right: 9rem */
+}
+
+.service_title{
+    /* border: 1px solid red; */
+    padding: 1rem;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(88, 88, 226);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+
+.service_box{
+    /* position: relative; */
+    /* border: 1px solid rgb(132, 0, 255); */
+    padding: 1rem;
+    /* margin-top: 1rem;
+    margin-left: .4rem; */
+    display: flex;
+}
+
+.box_one{
+    /* border: 1px solid blueviolet; */
+    padding: .5rem;
+    /* width: 40%; */
+    /* margin-left: .8rem; */
+    box-shadow: 3px 3px 5px 6px #ccc;
+    border-radius: 1rem
+}
+
+
+
+.service_pics{
+    /* border: 1px solid black; */
+    padding: 1rem;
+    justify-content: center;
+    /* position: absolute;
+    top: 50;
+    left: 30;
+    transform: translate(-50% , -50%); */
+    width: 30%;
+    /* margin-left: 13rem; */
+    /* transform: rotate(90deg) translateZ(0) */
+}
+
+
+
+.service_pics img{
+    width: 100%;
+    height: 60%;
+}
+
+.service_pics :hover{
+    transform:  rotate(360deg) scale(1.3);
+    transition: all 1s ease-in-out;
+        /* background: rgb(4, 4, 82); */
+    clip-path: circle()
+    
+}
+
+
+.service_details h2{
+    text-align: center;
+    font-size: 5    rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* font-size: 2rem */
+}
+
+.service_details p{
+    text-align: center;
+    color: grey;
+    /* margin-left: .5rem; */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* font-size: 1.2rem */
+}
+
+.final{
+     position: absolute;
+    /* border: 1px solid red; */
+    /* margin-top: -1rem; */
+    padding: 1rem;
+    /* width: 100%; */
+    /* width: 101%; */
+    /* height: 40vh; */
+    /* margin-left: -.6rem; */
+    background-image: url(./img/finegirl2.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+    .paragraph{
+        /* border: 1px solid red; */
+        position: relative;
+        width: 60%;
+        top: 20%;
+        left: 1%;
+        /* margin-top: 10rem; */
+        /* margin-left: 1rem; */
+        /* height: 4rem; */
+        padding: 1rem
+    }
+
+    .paragraph_text{
+        /* border: 1px solid white; */
+        animation-name: Textani;
+     animation-duration: 2s;
+        /* width: 100%; */
+        /* padding: 1rem */
+    }
+
+    .paragraph_text h1{
+        /* font-size: 3rem; */
+        color: #ffffff
+    }
+
+    .button{
+        border: 1px solid white;
+        /* width: 14%; */
+        /* margin-left: 7rem; */
+        padding: .5rem;
+        /* margin-top: 2rem; */
+        /* border-radius: 1rem; */
+        /* box-shadow: 10px 5px 5px; */
+        /* cursor: pointer; */
+        border-radius: .5rem;
+        backface-visibility: hidden;
+        color: #ffffff;
+        text-align: center;
+        font-size: 2.0rem;
+        font-weight: bold
+    }
+
+    .button a{
+        text-decoration: none;
+        color: #ffffff
+   }
+      
+
+    .button:hover{
+        background: rgb(2, 4, 8);
+        transform:  scale(1.2);
+        border: none;
+        transition: 1s ease-in-out;
+    }
+
+
+    .angry{
+        /* border: 1px solid red; */
+        height: 40vh;
+        /* position: absolute; */
+        /* background-image: url(./img/finegirl2.jpg);
+        background-size: cover;
+        background-position: center;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    }
+
+    .anger{
+        /* border: 1px solid rgb(122, 60, 60); */
+        height: 40vh;
+        width: 100%;
+        position: absolute;
+        background-image: url(./img/finegirl2.jpg);
+        background-size: cover;
+        background-position: center;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+    }
+    
+.footer{
+    /* border: 1px solid red; */
+    /* width: 100%; */
+    
+    /* height: 40vh; */
+    /* width: 100%; */
+    /* margin-top: 26rem; */
+    /* margin-bottom: -20rem; */
+    /* position: fixed; */
+    /* top: 100%; */
+    /* padding: 1rem; */
+    background: rgb(4, 4, 82);
+}
+
+.foot_boxes{
+    /* border: 1px solid red; */
+    /* width: 80%; */
+  
+}
+
+.contact_title{
+    /* border-bottom: 1px solid rgb(173, 173, 240); */
+    /* padding: 5px;  */
+    /* text-align: center; */
+    color: rgb(173, 173, 240);
+    font-weight: bold;
+
+}
+
+
+.pc{
+    /* border: 1px solid white; */
+    padding: 2px;
+    /* font-size: 2rem; */
+   
+    color: rgb(173, 173, 240)
+}
+
+.pc2{
+    /* border: 1px solid white; */
+    /* padding: 2px;  */
+    /* font-size: .8rem; */
+    /* text-align: justify; */
+    color: rgb(173, 173, 240);
+    /* text-align: center; */
+    font-size: 1rem;
+    /* margin: 2rem; */
+    list-style: none
+}
+
+.pc2 ul{
+    margin-left: 1rem;
+    margin-top: 1rem;
+    list-style: none;
+}
+.pc2 li a{
+  color: rgb(173, 173, 240);
+  text-decoration: none
+}
+
+.pc2 li:hover{
+    transform: scale(1.3);
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+.pc3{
+display: flex;
+margin: 14px
+}
+
+.social{
+    /* border: 1px solid red;; */
+    display: flex;
+    width: 50%;
+    padding: 5px;
+    align-items: center;
+    justify-content: center
+}
+
+.social_icon{
+    /* border: 1px solid darkgray; */
+    width: 20%;
+    /* padding: 2px; */
+}
+
+.social_icon img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain
+}
+.social_title{
+    margin: 4px;
+    
+}
+
+.social:hover{
+    transition: 1s ease-in-out;
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+/* New Footer Starts */
+.box_foot{
+    /* border: 1px solid burlywood; */
+    /* width: 50%; */
+    /* padding: 5px; */
+    /* margin-top: 30rem */
+}
+
+.connect{
+    /* border: 1px solid white; */
+    /* width: 30%; */
+    /* padding: 5px; */
+    /* margin-left: 45rem; */
+
+}
+
+.connect_title{
+    /* border: 1px solid green; */
+    padding: 5px;
+    color: rgb(173, 173, 240);
+    font-size: 1.5rem;
+    /* margin-top: 30rem; */
+    text-align: center
+}
+
+.icons_social{
+    /* border: 1px solid red; */
+    padding: 2px;
+    display: flex;
+
+    /* margin-left: 5rem */
+
+        /* width: 100%\ */
+    /* align-items: center */
+}
+
+.icon_ese{
+    /* border: 1px solid white; */
+    /* width: 5%; */
+    padding: 10px;
+    /* margin: 1rem; */
+    /* margin-bottom: 1rem; */
+    /* margin-left: 2rem */
+}
+
+
+.icon_ese img{
+    /* width: 100%;
+    height: 100% */
+}
+
+.icon_ese a img:hover{
+    transform: scale(1.5);
+    transition: .8s ease-in-out
+}
+
+.render{
+    border: 1px solid rgba(255, 255, 255, 0);
+}
+
+.service_details{
+    padding: 1rem;
+}

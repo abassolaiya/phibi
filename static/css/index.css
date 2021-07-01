@@ -1,0 +1,788 @@
+.index-welcome-container{
+  height: 70vh;
+  /*animation: animate 20s ease infinite;*/
+  background-size: cover;
+  background-position: top;
+  padding:2rem;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  background-image:url("./img/image5.jpg");
+  background-position:bottom;
+  background-size:cover;
+}
+
+
+.index-slider{
+  height: 70vh;
+  position:relative;
+}
+
+.index-slider-img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.index-slider-div{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  /*border:1px solid red;*/
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  padding:2rem;
+  box-sizing:border-box;
+}
+
+
+.index-welcome-container-head{
+  font-size:7rem;
+  font-weight:600;
+  text-transform:uppercase;
+  color:white;
+  transition: all .5s;
+  animation-name: Textani;
+  animation-duration: 2s;
+  /*-webkit-text-stroke:2px gray;*/
+}
+
+
+.index-welcome-container-sub{
+  font-size:2rem;
+  color:white;
+  font-weight:600;
+  animation-name: Textanim;
+  text-align:center;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  /*-webkit-text-stroke:1px gray;*/
+}
+
+
+
+.about_us_welcome-part-span{
+  font-size:1.5rem;
+}
+
+.about_us_welcome-part-top{
+  font-size:6rem;
+  font-weight:600;
+}
+
+
+
+.about_us_real{
+  /*background-color:#333;*/
+  /*border-top:2px solid white;*/
+  /*border-bottom:8px solid white;*/
+  padding:.5rem 8rem;
+  color:white;
+   background-image:linear-gradient(to right, tomato,70%,crimson);
+  font-family:tahoma;
+}
+
+
+
+
+.about_us_real-top{
+  margin-bottom:1rem;
+  font-size:2rem;
+  font-weight:600;
+  margin-top:3rem;
+}
+
+
+.about_us_real-body{
+  font-size:1.5rem;
+}
+
+
+
+.about_us_real-mission{
+  margin-top:8rem;
+}
+
+
+.about_us_real-mission-div{
+  
+  display:flex;
+  
+}
+
+
+.about_us_real-mission-div-story{
+  
+  font-size:1.5rem;
+  
+}
+
+
+
+.about_us_real-services{
+  display:flex;
+  margin-top:8rem;
+  justify-content:space-between;
+}
+
+
+
+.about_us_real-services-nar{
+  
+  margin-top:8rem;
+  width:45%;
+  
+}
+
+
+.about_us_real-services-nar-story{
+  font-size:1.7rem;
+  margin-top:2rem;
+}
+
+
+.about_us_real-services-split{
+  width:50%;
+  display:flex;
+  /*border:1px solid white;*/
+}
+
+
+
+.about_us_real-services-split-part{
+  width:50%;
+  /*border:1px solid red;*/
+}
+
+
+.about_us_real-services-split-part:first-child{
+  margin-top:9rem;
+}
+
+
+.about_us_real-services-split-part-div{
+  
+  background-color:white;
+  width:80%;
+  margin:2rem auto;
+  /*height:30rem;*/
+  box-sizing:border-box;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  padding:2rem;
+  transition:all .5s;
+
+}
+
+
+.about_us_real-services-split-part-div:hover,.about_us_real-services-split-part-div:focus{
+  transform:translateY(-.5rem);
+}
+
+
+
+.about_us_real-services-split-part-div:last-child{
+  margin-top:6rem;
+}
+
+
+
+
+
+.about_us_real-services-split-part-div-pic{
+  
+  width:8rem;
+  height:8rem;
+  border:1px solid red;
+  border-radius:50%;
+  border:2px solid white;
+  background-color:white;
+  margin:0rem auto;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  
+}
+
+
+.about_us_real-services-split-part-div-pic-img{
+  
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  
+}
+
+
+
+
+
+.about_us_real-services-split-part-div-topic{
+  color:gray;
+  margin:2rem 0rem;
+  font-size:1.5rem;
+  text-transform:uppercase;
+  font-weight:600;
+  text-align:center;
+  /*border:1px solid red;*/
+}
+
+
+
+
+
+.about_us_real-services-split-part-div-story{
+  color:gray;
+  font-size:1.3rem;
+  text-align:justify;
+}
+
+
+.about_us_real-btn{
+  display:block;
+  margin:6rem auto;
+  padding:1rem;
+  border-radius:30px;
+  text-decoration:none;
+  color:white;
+  border:2px solid white;
+  font-size:1.4rem;
+  width:fit-content;
+  text-align:center;
+  font-weight:600;
+  transition:all .5s;
+  outline:none;
+}
+
+
+
+.about_us_real-btn:hover,.about_us_real-btn:focus{
+  background-color:tomato;
+  /*color:white;*/
+  transform:translateY(-.5rem);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+
+
+
+
+
+.index-ourpatners{
+  /*height:60rem;*/
+  background-color:rgb(240,240,240);
+}
+
+
+
+.index-ourpatners-projects{
+  
+  padding:4rem 6rem;
+  
+}
+
+
+.index-ourpatners-projects-top{
+  text-align:center;
+  font-size:2rem;
+  text-transform:uppercase;
+  font-weight:600;
+  color:crimson;
+}
+
+
+
+.index-ourpatners-projects-main{
+   margin-top:2rem;
+   display:flex;
+   flex-wrap:wrap;
+   justify-content:center;
+ }
+
+
+.index-ourpatners-projects-main-div{
+  width:30%;
+  box-sizing:box-sizing;
+  height:45rem;
+  border-radius:10px;
+  margin-bottom:4rem;
+  position:relative;
+  background-color:white;
+  /*border:1px solid yellow;*/
+  box-shadow:0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+
+
+.index-ourpatners-projects-main-div-img{
+  width:100%;
+  height:30rem;
+  /*border:1px solid red;*/
+  object-fit:scale-down;
+  object-position:top left;
+  /*border-radius:10px;*/
+}
+
+
+.index-ourpatners-projects-main-div-det{
+  position:absolute;
+  bottom:0rem;
+  left:0rem;
+  height:60%;
+  width:100%;
+  box-sizing:border-box;
+  z-index:40;
+  /*background-color:white;*/
+  /*border:1px solid red;*/
+  background-image:linear-gradient(to top, white,90%,rgba(255,225,225,0.100));
+  padding:5rem 2rem;
+}
+
+
+
+.index-ourpatners-projects-main-div-det-top{
+  font-size:2rem;
+  color:#333;
+  font-weight:600;
+}
+
+
+.index-ourpatners-projects-main-div-det-nar{
+  margin-top:1rem;
+  font-size:1.3rem;
+  color:gray;
+}
+
+
+.index-contact_us{
+  /*height:45rem;*/
+  background-image:linear-gradient(to right, gray,30%,rgba(255,0,0,0)),url(./img/finegirl2.jpg);
+  background-size:cover;
+  background-position:right;
+  display:flex;
+  /*align-items:center;*/
+  padding:8rem 6rem;
+  justify-content:space-between;
+}
+
+
+.index-contact_us-half{
+  width:50%;
+  color:white;
+}
+
+
+.index-contact_us-half-top{
+  font-size:1.5rem;
+  color:white;
+}
+
+
+
+.index-contact_us-half-main{
+  font-size:5rem;
+  color:white;
+  margin-top:1rem;
+  font-weight:600;
+}
+
+
+.index-contact_us-form{
+  /*border:1px solid white;*/
+  padding:2rem;
+  box-sizing:border-box;
+  width:30%;
+  background-color:tomato;
+  border-radius:15px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+
+.index-contact_us-form-top{
+  padding:1rem;
+  color:white;
+  font-weight:600;
+  text-align:center;
+  border-bottom:2px solid white;
+  font-size:1.5rem;
+}
+
+
+.index-contact_us-form p{
+  margin:2rem 0rem;
+}
+
+
+.index-contact_us-form p label{
+  display:block;
+  margin-bottom:1rem;
+  margin-left:1rem;
+  color:white;
+  font-weight:600;
+  font-size:1.3rem;
+}
+
+
+
+.index-contact_us-form p input{
+  display:block;
+  box-sizing:border-box;
+  width:100%;
+  padding:1rem;
+  border-radius:30px;
+  border:2px solid transparent;
+  transition:all .5s;
+  outline:none;
+}
+
+
+.index-contact_us-form p input:focus{
+  border:2px solid crimson;
+}
+
+
+.index-contact_us-form p textarea{
+  width:100%;
+  height:6rem;
+  resize:none;
+  border-radius:10px;
+  padding:1rem;
+  box-sizing:border-box;
+  border:2px solid transparent;
+  transition:all .5s;
+  outline:none;
+}
+
+
+
+.index-contact_us-form p textarea:focus{
+  border:2px solid crimson;
+}
+
+
+
+.index-contact_us-form-btn{
+  display:block;
+  margin:2rem 0rem;
+  padding:1rem;
+  font-size:1.3rem;
+  font-weight:600;
+  text-transform:uppercase;
+  width:100%;
+  text-align:center;
+  border:2px solid white;
+  background:transparent;
+  color:white;
+  border-radius:30px;
+  cursor:pointer;
+  transition:all .5s;
+  outline:none;
+}
+
+
+.index-contact_us-form-btn:hover,
+.index-contact_us-form-btn:focus{
+  background-color:crimson;
+  color:white;
+}
+
+
+
+.index-ourpatners-projects-main-a{
+  display:block;
+  text-decoration:none;
+  width:9rem;
+  height:9rem;
+  /*border:1px solid red;*/
+  border-radius:50%;
+  background-color:white;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:2rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+
+.index-ourpatners-projects-main-a img{
+  width:60%;
+  height:60%;
+  object-fit:cover;
+}
+
+
+
+.index-ourpatners-projects-main-a:not(:first-child){
+  margin-left:2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            /* Tab-land */
+            
+            @media (max-width: 75em){
+              
+              .index-contact_us-half{
+                width:60%;
+                color:white;
+              }
+              
+              .index-contact_us-half-main{
+                font-size:4rem;
+              }
+              
+              .index-contact_us-form{
+                width:35%;
+              }
+              .index-ourpatners-projects-main-div{
+                /*border:1px solid red;*/
+                width:45%;
+                margin-left:1.5rem;
+              }
+              .index-ourpatners-projects-main{
+                justify-content:center;
+              }
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            /* Tab-port */
+            
+            
+            @media (max-width: 56.25em){
+              
+              .index-welcome-container{
+                text-align:center;
+                height:60vh;
+              }
+              
+              .index-slider{
+                height: 60vh;
+              }
+              
+              .index-welcome-container-head{
+                font-size:5rem;
+              }
+              
+              .about_us_welcome-part-top{
+                font-size:5rem;
+              }
+              
+              .about_us_welcome-part-story{
+                font-size:2rem;
+              }
+              
+              .about_us_real-services{
+                flex-direction:column;
+              }
+              
+              .about_us_real-services-nar{
+                width:100%;
+              }
+              
+              .about_us_real-services-split{
+                width:100%;
+              }
+              
+              .about_us_real-services-split-part-div-story{
+                text-align:center;
+              }
+              
+              .about_us_real-services-split-part-div{
+                /*height:fit-content;*/
+                display:flex;
+                border:1px solid white;
+                flex-direction:column;
+                height:40rem;
+                justify-content:center;
+                align-items:center;
+              }
+              .about_us_real-services-split-part:first-child{
+                margin-top:0rem;
+              }
+              .about_us_real-services-split-part-div:last-child{
+                margin-top:6rem;
+              }
+              
+              .about_us_real-services-split-part-div-pic{
+                width:15rem;
+                height:15rem;
+              }
+              
+              .index-contact_us{
+               flex-direction:column;
+               align-items:center;
+               background-position:center;
+               padding:3rem;
+               background-image:linear-gradient(to right, rgba(128,128,128,0.384),90%,rgba(255,0,0,0)),url(./img/finegirl2.jpg);
+              }
+              
+              .index-contact_us-half{
+                width:100%;
+                color:white;
+              }
+              
+              .index-contact_us-half-main{
+                font-size:3rem;
+              }
+              
+              .index-contact_us-form{
+                width:50%;
+                margin-top:3rem;
+              }
+              
+              .index-ourpatners-projects-main-div{
+                /*border:1px solid yellow;*/
+                width:70%;
+                margin-left:1.5rem;
+              }
+              
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            /* Phone-land */
+            
+            
+            @media (max-width: 37.5em){
+          
+              .index-welcome-container-head{
+                font-size:4rem;
+                -webkit-text-stroke:1px lightgray;
+              }
+              
+              .index-welcome-container-sub{
+                font-size:1.6rem;
+                -webkit-text-stroke:0px white;
+              }
+              
+              .about_us_real-services-split{
+                flex-direction:column;
+              }
+              
+              .about_us_real-services-split-part{
+                width:100%;
+                /*margin:0rem auto;*/
+              }
+              
+              .about_us_real-services-split-part:first-child{
+                margin-top:8rem;
+              }
+              
+              .about_us_real-services-split-part-div:last-child{
+                margin-top:0rem;
+              }
+              
+              .about_us_real{
+                padding:3rem;
+              }
+              
+              .index-contact_us-form{
+                width:90%;
+                margin-top:5rem ;
+              }
+              
+              .index-ourpatners-projects-main-div{
+                /*border:1px solid blue;*/
+              }
+              
+              .index-ourpatners-projects-main-div{
+                width:90%;
+              }
+              
+              .index-ourpatners-projects-main-a:not(:first-child){
+                margin-left:0rem;
+              }
+              
+              .index-ourpatners-projects-main-a{
+                margin:1rem;
+              }
+
+              
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+            /* Phone-port */
+            
+            
+            @media (max-width: 28.125em){
+              
+            }

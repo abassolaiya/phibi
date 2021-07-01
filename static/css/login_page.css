@@ -1,0 +1,249 @@
+
+
+
+.sign-div{
+  min-height:80vh;
+  box-sizing:border-box;
+  background-image:linear-gradient(to left, rgba(255,0,0,0),30%,gray),url(./img/finegirl2.jpg);
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:cover;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:4rem;
+}
+
+
+
+.sign-div-mid{
+  background-color:white;
+  padding:4rem 2rem;
+  width:30%;
+  border-radius:5px;
+}
+
+
+
+.sign-div-mid-img{
+  width:10rem;
+  height:10rem;
+  border-radius:50%;
+  margin:2rem auto;
+  background-color:gray;
+}
+
+
+
+.sign-div-mid-topic{
+  text-align:center;
+  font-size:2rem;
+  font-family:tahoma;
+  text-transform:uppercase;
+  margin-bottom:2rem;
+}
+
+
+
+.sign-div-mid-form p{
+  display:flex;
+  flex-direction:column-reverse;
+}
+
+
+
+.sign-div-mid-form input{
+  font-size:1.3rem;
+  padding:1rem;
+  margin-bottom:1rem;
+  border:none;
+  border-bottom:2px solid lightgray;
+  outline:none;
+  transition:.5s;
+}
+
+.sign-div-mid-form input:focus{
+  border-bottom:2px solid green;
+}
+
+
+.sign-div-mid-form label{
+  font-size:1.5rem;
+  /*font-weight:600;*/
+  font-family:tahoma;
+  margin-left:1rem;
+}
+
+
+
+.sign-div-mid-form button{
+  display:block;
+  margin-top:4rem;
+  width:100%;
+  padding:1rem;
+  font-size:1.3rem;
+  text-transform:uppercase;
+  border:none;
+  background-color:orange;
+  color:white;
+  font-weight:600;
+  border-radius:5px;
+  cursor:pointer;
+  transition:.5s;
+}
+
+
+
+.sign-div-mid-form-btn{
+  display:block;
+  text-decoration:none;
+  margin:4rem auto;
+  width:90%;
+  padding:1rem;
+  font-size:1.3rem;
+  text-transform:uppercase;
+  border:none;
+  background-color:orange;
+  color:white;
+  font-weight:600;
+  border-radius:5px;
+  text-align:center;
+  cursor:pointer;
+  transition:.5s;
+}
+
+
+
+.sign-div-mid-form button:hover{
+  opacity:.7;
+}
+
+
+
+.sign-div-mid-form-story{
+  font-size:1.4rem;
+  text-align:center;
+}
+
+
+.errorlist{
+  padding:0rem;
+}
+
+.errorlist li {
+  list-style:none;
+  font-size:1.2rem;
+  padding-left:0rem;
+  margin-left:0rem;
+  text-align:center;
+  color:red;
+}
+
+.sign-div-mid-img-pic{
+  width:100%;
+  height:100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            /* Tab-land */
+            
+            @media (max-width: 75em){
+              .sign-div-mid{
+                width:40%;
+              }
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            /* Tab-port */
+            
+            
+            @media (max-width: 56.25em){
+              .sign-div-mid{
+                width:50%;
+              }
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            /* Phone-land */
+            
+            
+            @media (max-width: 37.5em){
+              .sign-div-mid{
+                width:60%;
+              }
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+            /* Phone-port */
+            
+            
+            @media (max-width: 28.125em){
+              .sign-div-mid{
+                width:98%;
+              }
+            }

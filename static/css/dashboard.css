@@ -1,0 +1,131 @@
+
+
+.profile-div{
+  margin:3rem auto;
+  width:40%;
+}
+
+
+.profile-div-main{
+  /*border:1px solid blue;*/
+  box-sizing:border-box;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+
+.profile-div{
+  margin-top: 2rem;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.profile-one{
+  
+  width:100%;
+  
+}
+
+.profile-image{
+  /*border:1px solid red;*/
+  width:20rem;
+  height:20rem;
+  box-sizing:border-box;
+}
+
+.profile-image img{
+    width: 100%;
+    height: 100%;
+    object-fit:scale-down;
+}
+
+.profile_name{
+    margin: 2rem 0rem;
+    font-weight: bolder;
+    font-size: 2rem;
+    display: flex;
+    text-transform:uppercase;
+    color:#333;
+    text-align:center;
+    flex-direction: column;
+}
+
+.profile_name span{
+  font-size: 1.5rem;
+  color: gray;
+  margin-left: 1rem;
+  text-transform:lowercase;
+}
+
+.profile-boxes{
+  /*border:1px solid yellow;*/
+}
+
+.profile-box-section{
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.profile-one-box{
+    margin:2rem auto;
+    padding:2rem 1rem;
+    border-radius: 5px;
+    background: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    text-decoration:none;
+    width:70%;
+}
+
+.profile-one-box:hover{
+    background: lightgray;
+    transition: ease-in-out .3s all;
+}
+
+
+
+
+                    
+                    /* Tab Land*/
+                    
+                    @media (max-width: 85em){
+                      
+                      .profile-div{
+                        width:60%;
+                      }
+                      
+                    }
+                    
+                    
+                    /* Tab Port*/
+                    
+                    @media (max-width: 75em){
+                      
+                      .profile-div{
+                        width:90%;
+                      }
+                      
+                    }
+
+
+                    /* Phone Land*/
+                    
+                    @media (max-width: 37.5em){
+                      
+                      
+                      
+                    }
+                      
+                      
+                    /* Phone Port*/
+                    
+                    @media (max-width: 28.125em){
+                      
+                      
+                      
+                    }

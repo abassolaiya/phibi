@@ -1,0 +1,33 @@
+
+
+.tut_det{
+  padding:3rem;
+}
+
+
+.tut_det-big{
+  width:100%;
+  box-sizing:border-box;
+  height:60vh;
+  /*background-color:gray;*/
+  /*border:1px solid red;*/
+}
+
+
+.tut_det-title{
+  margin-top:2rem;
+  font-size:2rem;
+  font-weight:600;
+  color:#333;
+}
+
+.tut_det-dec{
+  margin-top:2rem;
+  font-size:1.3rem;
+  margin-bottom:3rem;
+}
+
+.media_page-list_frame{
+  width:100%;
+  height:100%;
+}
