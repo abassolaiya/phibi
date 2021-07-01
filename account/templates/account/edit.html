@@ -1,0 +1,17 @@
+{% extends "_base.html" %}
+{% block title %}Edit your account{% endblock %}
+{% block content %}
+  <div class="sign-div-mid">
+  
+      <div class="sign-div-mid-topic"> Edit your account</div>
+      <p style="text-align: center; color: #00008b; margin-bottom: 1rem;">You can edit your account using the following form:</p>
+      <form action="." method="post" enctype="multipart/form-data" class="sign-div-mid-form">
+        {{ user_form.as_p }}
+        {{ profile_form.as_p }}
+        {% csrf_token %}
+        <p><input type="submit" value="Save changes"  class="login_button_two"></p>
+      </form>
+      
+    </div>
+  </div>
+{% endblock %}

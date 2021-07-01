@@ -1,0 +1,244 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{% block title %}{% endblock %}</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'css/general.css' %}">
+  <link rel="stylesheet" href="{% static 'css/header.css' %}">
+  <link rel="stylesheet" href="{% static 'css/blog-list.css' %}">
+  <link rel="stylesheet" href="{% static 'css/login_page.css' %}">
+  <link rel="stylesheet" href="{% static 'css/dashboard.css' %}">
+  <link rel="stylesheet" href="{% static 'css/blog-detail.css' %}">
+  <link rel="stylesheet" href="{% static 'css/index.css' %}">
+  <link rel="stylesheet" href="{% static 'css/event_list.css' %}">
+  <link rel="stylesheet" href="{% static 'css/event_detail.css' %}">
+  <link rel="stylesheet" href="{% static 'css/create_blog.css' %}" >
+
+  <link rel="stylesheet" href="{% static 'css/tut_det.css' %}">
+  <link rel="stylesheet" href="{% static 'css/tutorials.css' %}" >
+
+  <link rel="stylesheet" href="{% static 'css/services.css' %}">
+  <link rel="stylesheet" href="{% static 'css/footer.css' %}">
+
+  <!-- a.o.s starts -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- a.o.s ends -->
+    <!-- Google Material Icons For The Chat Bot Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css">
+      <!-- for nav css   -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Farro&family=Itim&family=Montserrat&display=swap" rel="stylesheet">
+
+  </head>
+
+
+
+
+<body>
+
+  <script src="{% static "js/header.js" %}" ></script>
+
+    <header style="padding:0rem;background-color:white;border-bottom:0rem" >
+
+      <div class="header-dd" style="background-color:crimson" >
+
+      <a href="{% url 'indexpage' %}" class="logo">
+
+          <div class="logo-img">
+
+            <img src="{% static 'css/img/rel-removebg-preview.png' %}" alt="" >
+
+          </div>
+
+          <div class="logo-txt">
+            Phibitech
+          </div>
+
+      </a>
+
+        <div class="links">
+
+          <a class="links-a" href="{% url 'indexpage' %}"> HOME</a>
+          <a class="links-a" href="{% url 'aboutuspage' %}"> SERVICES</a>
+          <a class="links-a" href="{% url 'blog:post_list' %}"> BLOG</a>
+          <a class="links-a" href="{% url 'event:event_list' %}"> EVENTS</a>
+          <a class="links-a" href="{% url 'phitube:media_list' %}"> OUR TUTORIALS </a>
+
+        </div>
+
+      </div>
+
+      <div class="header-cat" >
+
+        <form class="header-cat-form" >
+
+          <p>
+
+            <label></label>
+            <input type="search" placeholder="Looking a video...?" />
+
+          </p>
+
+          <button> Search </button>
+
+        </form>
+
+
+        <div class="header-cat-div" >
+          <!-- {% include 'phitube/cat_list.html' %} -->
+<!--
+          <a href="#" class="header-cat-div-a">react js</a>
+          <a href="#" class="header-cat-div-a">html</a>
+          <a href="#" class="header-cat-div-a">css</a>
+          <a href="#" class="header-cat-div-a">java script</a>
+          <a href="#" class="header-cat-div-a">react native</a>
+          <a href="#" class="header-cat-div-a">python</a>
+          <a href="#" class="header-cat-div-a">django</a>
+          <a href="#" class="header-cat-div-a">django api</a>
+          <a href="#" class="header-cat-div-a">graphics design</a>
+          <a href="#" class="header-cat-div-a">video editing</a>
+          <a href="#" class="header-cat-div-a">react native</a>
+          <a href="#" class="header-cat-div-a">python</a>
+          <a href="#" class="header-cat-div-a">django</a>
+          <a href="#" class="header-cat-div-a">django api</a>
+          <a href="#" class="header-cat-div-a">graphics design</a>
+          <a href="#" class="header-cat-div-a">video editing</a> -->
+
+        </div>
+
+      </div>
+
+      <!--      <div class="top_header_fixed" onclick="openNav()" >-->
+      <!--    <img src="./css/img/menu.png" class="top_header_fixed_img" />-->
+      <!--</div>-->
+
+      <!--<div onclick="closeNav()" id="top_header_totalFixed" class="top_header_totalFixed" >-->
+      <!--</div>-->
+
+      <!--<div id="top_header_totalFixed_main" class="top_header_totalFixed_main" >-->
+
+      <!--    <li class="top_header_totalFixed_main_li" >-->
+      <!--        <a href="./index.html" class="top_header_totalFixed_main_li_a" >HOME</a>-->
+      <!--    </li>-->
+
+      <!--    <li class="top_header_totalFixed_main_li" >-->
+      <!--          <a href="./pages/services.html" class="top_header_totalFixed_main_li_a" >SERVICES</a>-->
+      <!--    </li>-->
+
+      <!--    <li class="top_header_totalFixed_main_li" >-->
+      <!--        <a href="./pages/request.html" class="top_header_totalFixed_main_li_a" >ORDER</a>-->
+      <!--    </li>-->
+
+      <!--    <li class="top_header_totalFixed_main_li" >-->
+      <!--        <a href="./pages/about.html" class="top_header_totalFixed_main_li_a" >ABOUT US</a>-->
+      <!--    </li>-->
+
+      <!--</div>-->
+        <div class="top_header_fixed" onclick="openNav()" >
+            <img src="{% static "css/img/list.png" %}" class="top_header_fixed_img" />
+        </div>
+
+        <div onclick="closeNav()" id="top_header_totalFixed" class="top_header_totalFixed" >
+        </div>
+
+      <div id="top_header_totalFixed_main" class="top_header_totalFixed_main" >
+
+            <li class="top_header_totalFixed_main_li" >
+                <a href="{% url 'indexpage' %}" class="top_header_totalFixed_main_li_a" >Home</a>
+            </li>
+            <li class="top_header_totalFixed_main_li" >
+                  <a href="{% url 'aboutuspage' %}" class="top_header_totalFixed_main_li_a" >About Us</a>
+            </li>
+            <li class="top_header_totalFixed_main_li" >
+                <a href="{% url 'blog:post_list' %}" class="top_header_totalFixed_main_li_a" >Blogs</a>
+            </li>
+            <li class="top_header_totalFixed_main_li" >
+                <a href="{% url 'event:event_list' %}" class="top_header_totalFixed_main_li_a" >Events</a>
+            </li>
+            <li class="top_header_totalFixed_main_li" >
+              <a href="{% url 'phitube:media_list' %}" class="top_header_totalFixed_main_li_a" >Our Tutorials</a>
+            </li>
+
+        </div>
+
+    </header>
+
+
+
+  {% block content %}{% endblock %}
+
+
+    <footer class="footer" >
+
+      <div class="footer_company_img" >
+        <img class="footer_company_img-img" alt="logo" src="{% static 'css/img/rel-removebg-preview.png' %}">
+      </div>
+
+      <div class="footer_package" >
+
+        <div class="footer_company" >
+
+          <div class="footer_company_name" >PhiBiTech</div>
+
+          <div class="footer_company_story" >
+            PhiBiTech is a company, specialized in IT services like Data science, Software development, Analytics,  Graphics design, Branding, Intern Training just to mention a few.
+          </div>
+
+        </div>
+
+        <div class="footer_nav" >
+
+          <div class="footer_nav_top" > Quick Links </div>
+
+          <div class="footer_nav_body" >
+
+            <a href="{% url 'indexpage' %}" class="footer_nav_body_a" >Home</a>
+            <a href="{% url 'blog:post_list' %}" class="footer_nav_body_a" >Blogs</a>
+            <a href="{% url 'event:event_list' %}" class="footer_nav_body_a" >Events</a>
+            <a href="{% url 'phitube:media_list' %}" class="footer_nav_body_a" >Our Tutorials</a>
+            <a href="{% url 'aboutuspage' %}" class="footer_nav_body_a" >About Us</a>
+            <a href="{% url 'aboutuspage' %}#great" class="footer_nav_body_a" >Contact Us</a>
+
+          </div>
+
+        </div>
+
+        <div class="footer_subscription" >
+
+          <div class="footer_subscription_sec" >
+
+            <div class="footer_subscription_sec_top" > Contact Us </div>
+
+            <div class="footer_subscription_sec_list" >
+
+              <a href="#" class="footer_subscription_sec_list_a" >
+                <img alt="" class="footer_subscription_sec_list_a-img" src="{% static "css/img/facebook.png" %}"  />
+              </a>
+              <a href="#" class="footer_subscription_sec_list_a" >
+                <img alt="" class="footer_subscription_sec_list_a-img" src="{% static "css/img/instagram.png" %}"  />
+              </a>
+              <a href="#" class="footer_subscription_sec_list_a" >
+                <img alt="" class="footer_subscription_sec_list_a-img" src="{% static "css/img/linkedin.png" %}"  />
+              </a>
+              <a href="#" class="footer_subscription_sec_list_a" >
+                <img alt="" class="footer_subscription_sec_list_a-img" src="{% static "css/img/twitter.png" %}"  />
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </footer>
+
+
+</body>

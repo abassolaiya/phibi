@@ -1,0 +1,345 @@
+{% extends '_base.html'%}
+{% load static %}
+{% block title %} Welcome | PhibiTech {% endblock %}
+
+{% block content %}
+            <div class="index-slider" >
+
+              <img alt="" class="index-slider-img byggg" src="{% static 'css/img/finegirl2.jpg' %}" />
+              <img alt="" class="index-slider-img byggg" src="{% static 'css/img/fin3.jpg' %}" />
+              <img alt="" class="index-slider-img byggg" src="{% static 'css/img/business2.jpeg' %}" />
+
+              <div class="index-slider-div" >
+
+                <div class="index-welcome-container-head" > Welcome !!! </div>
+
+                <div class="index-welcome-container-sub" > ... you are at the right place because your satisfaction is our best concern </div>
+
+              </div>
+
+            </div>
+
+            <div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+            <script>
+
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("byggg");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "flex";
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 10000); // Change image every 2 seconds
+}
+
+</script>
+
+
+
+
+
+          <div class="about_us_real" >
+
+            <div class="about_us_real-top" > About Us </div>
+
+            <div class="about_us_real-body" >
+              PhiBITech is is an Information Technology (IT) firm that that helps
+              differnet sizes (small, medial and Large Enterprise) to herness the
+              power of information technology for their business without loosing
+              their edge but in fact gain more grount in the ever competitive market.
+              PhiBITch as a range of services which include Business intelliegnce,
+              Graphicshichs Designing, Mobile, Desktop and web App design, Digital
+              Marketing, Branding.
+            </div>
+
+            <div class="about_us_real-mission" >
+
+              <div class="about_us_real-top" > Our Mission </div>
+
+                <div class="about_us_real-mission-div-story" >
+
+                  Realizing the full potential of their business - universal access to opportunities, research and analytics in industries
+                  - to drive a new era of incresased development, growth and productivity.
+                </div>
+
+            </div>
+
+            <div class="about_us_real-services" >
+
+              <div class="about_us_real-services-nar" >
+
+                  <span class="about_us_welcome-part-span" > Our Services </span>
+
+                  <br>
+
+                  <div class="about_us_welcome-part-top" >
+                    We've Got You Covered
+                  </div>
+
+                  <div class="about_us_real-services-nar-story " >
+                      We have a range of Information Technology servics you can benefit from:
+                  </div>
+
+              </div>
+
+              <div class="about_us_real-services-split" >
+
+                <div class="about_us_real-services-split-part" >
+
+                  <div class="about_us_real-services-split-part-div" >
+
+                    <div class="about_us_real-services-split-part-div-pic" >
+                      <img alt="" class="about_us_real-services-split-part-div-pic-img" src="{% static 'css/img/web.gif' %}" />
+                    </div>
+
+                    <div class="about_us_real-services-split-part-div-topic" > Web Design and Development  </div>
+
+                    <div class="about_us_real-services-split-part-div-story" >
+                      Web design is important because it impacts how your audience perceives your brand. The impression you make on them can either get them to remain on your page.
+                    </div>
+
+                  </div>
+
+                  <div class="about_us_real-services-split-part-div" >
+
+                    <div class="about_us_real-services-split-part-div-pic" >
+                      <img alt="" class="about_us_real-services-split-part-div-pic-img" src="{% static 'css/img/mar.gif' %}" />
+                    </div>
+
+                    <div class="about_us_real-services-split-part-div-topic" > Digital Marketing  </div>
+
+                    <div class="about_us_real-services-split-part-div-story" >
+                      The group of potential customers that are found online is a much larger group of people than you are likely to be able to attract locally.
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="about_us_real-services-split-part" >
+
+                  <div class="about_us_real-services-split-part-div" >
+
+                    <div class="about_us_real-services-split-part-div-pic" >
+                      <img alt="" class="about_us_real-services-split-part-div-pic-img" src="{% static 'css/img/ai.gif' %}" />
+                    </div>
+
+                    <div class="about_us_real-services-split-part-div-topic" >Artificial Intelligence & Analysis  </div>
+
+                    <div class="about_us_real-services-split-part-div-story" >It is no news that data is the new oil, and any business that refuses to mine the new oil is at a disadvantage.
+                    </div>
+
+                  </div>
+
+                  <div class="about_us_real-services-split-part-div" >
+
+                      <div class="about_us_real-services-split-part-div-pic" >
+                      <img alt="" class="about_us_real-services-split-part-div-pic-img" src="{% static 'css/img/profile.png' %}" style="width:90%;height:90%;" />
+                    </div>
+
+                    <div class="about_us_real-services-split-part-div-topic" > Branding  </div>
+
+                    <div class="about_us_real-services-split-part-div-story" >
+                    The first thing that comes to mind when the logo of a company is seen is the actual brand of the company. We use the power of Digital media to engrave your message on the mind your customers and potential customers.
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <a href="{% url 'aboutuspage' %}" class="about_us_real-btn">
+              Learn More
+            </a>
+
+          </div>
+
+
+
+
+
+
+          <!--<div class="index-ourpatners" >-->
+
+          <!--  <div class="index-ourpatners-projects" >-->
+
+          <!--    <div class="index-ourpatners-projects-top" >-->
+          <!--      Our Concluded Projects-->
+          <!--    </div>-->
+
+          <!--    <div class="index-ourpatners-projects-main" >-->
+
+          <!--      <div class="index-ourpatners-projects-main-div" >-->
+
+          <!--        <img class="index-ourpatners-projects-main-div-img" src="{% static 'css/img/grace.png' %}" alt="" />-->
+
+          <!--        <div class="index-ourpatners-projects-main-div-det" >-->
+
+          <!--          <div class="index-ourpatners-projects-main-div-det-top" >-->
+          <!--            Agribiz-->
+          <!--          </div>-->
+
+          <!--          <div class="index-ourpatners-projects-main-div-det-nar" >-->
+          <!--            Branding, Intern Training just to mention a few. We propose in exchange for the use of the building, to offer a quarter of the fee we charge on all our services, switch over our accounts to your bank, have you as our sponsor for our planned 3 weeks IT training for teenagers and other benefits we can discuss as the deal proceeds. We will appreciate your swift response to this letter.-->
+          <!--          </div>-->
+
+          <!--        </div>-->
+
+          <!--      </div>-->
+
+          <!--      <div class="index-ourpatners-projects-main-div" >-->
+
+          <!--        <img class="index-ourpatners-projects-main-div-img" src="{% static 'css/img/find.png' %}" alt="" />-->
+
+          <!--        <div class="index-ourpatners-projects-main-div-det" >-->
+
+          <!--          <div class="index-ourpatners-projects-main-div-det-top" >-->
+          <!--            Claims Monitors-->
+          <!--          </div>-->
+
+          <!--          <div class="index-ourpatners-projects-main-div-det-nar" >-->
+          <!--            Branding, Intern Training just to mention a few. We propose in exchange for the use of the building, to offer a quarter of the fee we charge on all our services, switch over our accounts to your bank, have you as our sponsor for our planned 3 weeks IT training for teenagers and other benefits we can discuss as the deal proceeds. We will appreciate your swift response to this letter.-->
+          <!--          </div>-->
+
+          <!--        </div>-->
+
+          <!--      </div>-->
+
+          <!--      <div class="index-ourpatners-projects-main-div" >-->
+
+          <!--        <img class="index-ourpatners-projects-main-div-img" src="{% static 'css/img/webit.png' %}" alt="" />-->
+
+          <!--        <div class="index-ourpatners-projects-main-div-det" >-->
+
+          <!--          <div class="index-ourpatners-projects-main-div-det-top" >-->
+          <!--            PhibiTech-->
+          <!--          </div>-->
+
+          <!--          <div class="index-ourpatners-projects-main-div-det-nar" >-->
+          <!--            Branding, Intern Training just to mention a few. We propose in exchange for the use of the building, to offer a quarter of the fee we charge on all our services, switch over our accounts to your bank, have you as our sponsor for our planned 3 weeks IT training for teenagers and other benefits we can discuss as the deal proceeds. We will appreciate your swift response to this letter.-->
+          <!--          </div>-->
+
+          <!--        </div>-->
+
+          <!--      </div>-->
+
+          <!--    </div>-->
+
+          <!--  </div>-->
+
+          <!--</div>-->
+
+
+
+          <div class="index-ourpatners" >
+
+            <div class="index-ourpatners-projects" >
+
+              <div class="index-ourpatners-projects-top" >
+                Our Proud Pathners
+              </div>
+
+              <div class="index-ourpatners-projects-main" >
+
+                <a href="" class="index-ourpatners-projects-main-a">
+                  <img alt="" src="{% static 'css/img/logo.png' %}" />
+                </a>
+
+                <a href="" class="index-ourpatners-projects-main-a">
+                  <img alt="" src="{% static 'css/img/finance.png' %}" style="width:120%;height:120%" />
+                </a>
+
+                <a href="" class="index-ourpatners-projects-main-a">
+                  <img alt="" src="{% static 'css/img/rel-removebg-preview.png' %}" />
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+
+
+          <!-- <div class="index-contact_us" id="fine" >
+
+            <div class="index-contact_us-half" >
+
+              <div class="index-contact_us-half-top" >
+                Contact Us
+              </div>
+
+              <div class="index-contact_us-half-main" >
+                Let's Give Your Business
+                <br>
+                The Exposure It
+                <br>
+                Deserves
+              </div> -->
+
+
+              <!-- <div class="about_us_real-services-nar-story" >
+                  This class is proposed for secondary schools summer break
+                Nigeria, specialized in IT services like Data science, Software development, Analytics,  Graphics design, Branding, Intern Training just to mention a few.
+                Nigeria, specialized in IT services like Data science, Software development, Analytics,  Graphics design, Branding, Intern Training just to mention a few.
+                  and is proposed to last for 3 weeks.We are soliciting
+                  your support to host this classes as.
+              </div>
+
+            </div>
+
+            <form class="index-contact_us-form" >
+
+              <div class="index-contact_us-form-top" >
+                Contact Us
+              </div>
+
+              <p>
+                <label> Name: </label>
+                <input type="text" />
+              </p>
+
+              <p>
+                <label> Email: </label>
+                <input type="text" />
+              </p>
+
+              <p>
+                <label> Phone Number: </label>
+                <input type="text" />
+              </p>
+
+              <p>
+                <label> Message: </label>
+                <textarea></textarea>
+              </p>
+
+              <button class="index-contact_us-form-btn" > Submit Request </button>
+
+            </form>
+
+          </div> -->
+
+
+
+
+{% endblock %}

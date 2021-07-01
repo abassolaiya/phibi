@@ -1,0 +1,32 @@
+{% extends "_base.html" %}
+{% block title %}Create an account{% endblock %}
+{% block content %}
+  <div class="login_main">
+    {% if form.errors %}
+    <p>
+      Your username and password didn't match.
+      Please try again.
+    </p>
+  {% else %}
+  
+  {% endif %}
+  <div class="sign-div">
+  
+    <div class="sign-div-mid">
+  
+      <div class="sign-div-mid-topic"> Register</div>
+  
+      <form action="" method="POST" class="sign-div-mid-form">       
+        {{ user_form.as_p }}
+        {% csrf_token %}
+        </p>
+  
+        <button> Sign Up </button>
+  
+      </form>
+      
+    </div>
+  </div>
+  
+  </div>  
+{% endblock %}

@@ -1,0 +1,43 @@
+{% extends "_base.html" %}
+{% load static %}
+{% block title %}Welcome{% endblock %}
+{% block content %}
+  {% comment %} <h1 class="header_h1">Welcome {{ new_user.first_name }}!</h1>
+  <p class="header_paragraph">Your account has been successfully created.</a></p>
+  
+  
+   {% endcomment %}
+  
+  
+  
+  
+  
+        <div class="sign-div" >
+          
+          <div class="sign-div-mid" >
+            
+            <div class="sign-div-mid-img" >
+              <img class="sign-div-mid-img-pic" alt="" src="{% static "css/images/profile.png" %}" />
+            </div>
+            
+            <div class="sign-div-mid-topic" style="color:green;" > Success </div>
+            
+            <div class="sign-div-mid-form" >
+              
+              <div class="sign-div-mid-form-story" >
+                Your account has been successfully created.
+                Click the link below to go to the sign in page in order to log in.
+              </div>
+              
+              <a href="{% url "login" %}" class="sign-div-mid-form-btn" > Go to sign in page </a>
+              
+            </div>
+            
+          </div>
+          
+        </div>
+  
+  
+  
+  
+{% endblock %}

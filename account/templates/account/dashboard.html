@@ -1,0 +1,62 @@
+{% extends "_base.html" %}
+{% load static %}
+{% block title %}Dashboard{% endblock %}
+{% block content %}
+
+<div class="profile-main">
+  
+    <div class="profile-div">
+      
+      <div class="profile-div-main">
+        
+        <div class="profile-image">
+          <img src="{% static 'css/img/avatar7.png' %}" class="avatar" alt="">
+      </div>
+  
+        <div class="profile-one">
+          
+          
+            <div class="profile_name">
+                 {{user.first_name}} {{user.last_name}}
+                  <span>{{user.email}}</span>
+            </div>
+            
+            <div class="profile-boxes">
+                
+                <div class="profile-box-section">
+                  
+                  <a href="{% url 'blog:post_create' %}" class="profile-one-box">
+                    Post An Article
+                  </a>
+                    
+                  <a href="{% url 'event:event_create' %}" class="profile-one-box">
+                    Host An Event
+                  </a>
+                  
+                  <!--<a href="{% url "edit" %}"  class="profile-one-box">-->
+                  <!--  Edit Profile-->
+                  <!--</a>-->
+                  
+                  <a href="{% url "password_change" %}" class="profile-one-box">
+                    Change Password
+                  </a>
+                  
+                  <a href="{% url 'logout' %}"  class="profile-one-box">
+                    Log Out
+                  </a>
+                  
+                </div>
+                
+            </div>
+            
+      </div>
+        
+      </div>
+      
+    </div>
+    
+</div>
+ 
+
+  
+{% endblock %}
