@@ -1,0 +1,16 @@
+{% block content %}
+
+
+
+    <div class="tutorials_big" >
+
+      {% for go in cat_list %}
+
+        <a href="{{ go.get_absolute_url }}" class="header-cat-div-a">{{ go.category }}</a>
+
+      {% endfor %}
+
+    </div>
+
+
+{% endblock content %}

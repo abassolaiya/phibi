@@ -1,0 +1,17 @@
+{% extends '_base.html' %}
+{% block title %}Search{% endblock title %}
+{% block content %}
+  <h1>Search Results</h1>
+  {% for phitube in media_list %}
+  <div class="blog-detail-full-title" >
+    {{ phitube.title }}
+  </div>
+
+  <div class="" style="color:#333;font-size:1.5rem;" > {{ post.published }} </div>
+
+  {{phitube.embeded_url}}
+  <div class="blog-detail-full-detail"  >
+    {{ post.description|truncatechars:4000000000|linebreaks }}
+  </div>
+  {% endfor %}
+{% endblock content %}

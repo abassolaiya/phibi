@@ -1,0 +1,50 @@
+{% extends '_base_tut_detail.html' %}
+{% load static %}
+{% block title %} {{ media_detail.title }} {% endblock title %}
+
+{% block content %}
+
+
+      
+
+
+    <div class="tut_det" >
+
+      <div class="tut_det-big" >
+
+        <iframe class="media_page-list_frame" src="{{ media_detail.embeded_url }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+      </div>
+
+      <div class="tut_det-title" >
+        {{ media_detail.title }}
+      </div>
+
+      <div class="tutorials_div-dec" style="align-items:center;" >
+
+          <div class="tutorials_div-dec-pic" >
+            <img class="tutorials_div-dec-pic-img" alt="" src="{% static 'css/img/rel-removebg-preview.png' %}" />
+          </div>
+
+          <div>
+            <!--<a href="#" class="tutorials_div-dec-a"> The Joy Of My Salvation </a>-->
+
+            <div class="tutorials_div-time" >
+              {{ media_detail.author }}
+            </div>
+            <div class="tutorials_div-time" >
+              {{ media_detail.published }}
+            </div>
+          </div>
+
+        </div>
+
+      <div class="tut_det-dec" >
+          {{ media_detail.description }}
+      </div>
+
+    </div>
+
+
+
+{% endblock content %}

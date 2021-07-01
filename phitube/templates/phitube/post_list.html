@@ -1,0 +1,45 @@
+{% extends '_base_tut.html' %}
+{% load static%}
+{% block title %}PhiTube{% endblock title %}
+
+{% block content %}
+
+
+  
+    <div class="tutorials_big" >
+
+      {% for phitube in media_list %}
+
+        <div class="tutorials_div" >
+
+          <div class="tutorials_div-top" >
+            <img class="tutorials_div-top-img" alt="{{ phitube.title }}" src="{{ phitube.banner.url }}"  />
+          </div>
+
+          <div class="tutorials_div-dec" >
+
+            <div class="tutorials_div-dec-pic" >
+              <img class="tutorials_div-dec-pic-img" alt="" src="{% static 'css/img/rel-removebg-preview.png' %}" />
+            </div>
+
+            <div>
+              <a href="{% url 'phitube:media_detail' pk=phitube.id %}" class="tutorials_div-dec-a"> {{ phitube.title|truncatechars:30|linebreaks }} </a>
+
+              <div class="tutorials_div-time" style="margin-top:.5rem;" >
+                {{ phitube.author }}
+              </div>
+              <div class="tutorials_div-time" >
+                {{ phitube.published }}
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      {% endfor %}
+
+    </div>
+
+
+{% endblock content %}

@@ -1,0 +1,54 @@
+{% extends '_base.html' %}
+{% load static%}
+{% block title %} PhibiTech | Blog {% endblock title %}
+
+{% block content %}
+
+
+    <div class="blog-list" >
+  
+        
+      
+      {% for post in post_list %}
+      
+      
+      
+      
+      <div class="blog-list-div" >
+          
+          <div class="blog-list-div-date" > {{ post.published }} </div>
+          
+          <a href="{{ post.get_absolute_url }}" class="blog-list-div-title" >
+            {{ post.title }}
+          </a>
+          
+          <div class="blog-list-div-narr" >
+            {{ post.body|truncatechars:400|linebreaks }}
+          </div>
+          
+          
+         {% if post.image %}
+            <div class="blog-list-div-img" >
+              <img class="blog-list-div-img-pic" src="{{ post.image.url}}" alt="" />
+            </div>
+         {% else %}
+            <div class="blog-list-div-img">
+            </div>
+         {% endif %}
+          
+          <a href="{{ post.get_absolute_url }}" class="blog-list-div-a">Read more</a>
+          
+      </div>
+
+      {% endfor %}
+        
+        
+        
+    </div>
+
+
+
+
+
+
+{% endblock content %}

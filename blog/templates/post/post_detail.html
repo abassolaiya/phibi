@@ -1,0 +1,94 @@
+{% extends '_base.html' %}
+{% load static %}
+{% block title %}{{ object.title }}{% endblock title %}
+
+{% block content %}
+    
+    
+    <div class="blog-detail" >
+        
+        <div class="blog-detail-full" >
+          
+          <div class="blog-detail-full-title" >
+            {{ post.title }}
+          </div>
+          
+          <!--{{ post.published }}-->
+          
+          {% if post.image %}
+          
+            <div class="blog-detail-full-img" >
+              <img alt="{{ post.title }}" class="blog-detail-full-img-pic" src="{{ post.image.url}}" />
+            </div>
+          
+          {% endif %}
+          
+          <div class="blog-detail-full-detail" >
+            {{ post.body|truncatechars:4000000000|linebreaks }}
+          </div>
+          
+          
+          
+          
+          
+                    <div class="post-comment" >
+            
+            <div class="comment-section-top" style="margin-top:6rem;" > Leave A Comment </div>
+            
+            <form method="POST" class="post-comment-form">
+              {% csrf_token %}
+              {{ form.as_p }}
+              <button type="submit" class="save btn btn-default"> Post Comment </button>
+            </form>
+          </div>
+      
+          
+          <div class="comment-section" >
+            
+            <div class="comment-section-top" > All Comments </div>
+            
+            {% for comment in post.comments.all %}
+            
+              <div class="comment-section-div" >
+              
+              <div class="comment-section-div-top" >
+                
+                <div class="comment-section-div-top-img" >
+                  <img class="comment-section-div-top-img-pic" src="{% static "css/img/user.png" %}" alt="{{comment.name}}" />
+                </div>
+                
+                <div class="comment-section-div-top-name" >
+                  <div class="comment-section-div-top-name-name" > {{ comment.name }} </div>
+                  <div class="comment-section-div-top-name-date" > {{ comment.created }} </div>
+                </div>
+                
+              </div>
+              
+              <div class="comment-section-div-body" >
+                {{ comment.body }}
+              </div>
+              
+            </div>
+            
+          {% endfor %}
+            
+            
+            
+          </div>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+        </div>
+        
+      </div>
+      
+      
+ 
+{% endblock content %}
